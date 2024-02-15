@@ -1,4 +1,5 @@
 <div align="center">
+
 ## What is DreamChat?
 
 DreamChat is a WIP chat room with a modern UI and customizeable options. It's mainly made for talking with friends in school.
