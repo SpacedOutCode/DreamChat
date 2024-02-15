@@ -1,0 +1,431 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    height: 100%;
+    overflow-y: hidden;
+}
+body {
+    height: 100%;
+    overflow: hidden;
+}
+#wrapper,
+#loginform {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    padding-bottom: 25px;
+    background: linear-gradient(179deg, #201B30 1.01%, #3C247E 99.01%) no-repeat;
+}
+
+.error {
+    background-color: #992c2c;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+
+#name {
+    height: 5vh;
+    width: 15vw;
+    background-color: #201B30;
+    color: #fff;
+    border: #3C247E 1px solid;
+    border-radius: 2.5vh;
+    padding-left: 1.5vh;
+}
+
+#name:focus-visible {
+    border: #fff 1px solid;
+    outline: none;
+}
+
+#enter {
+    height: 5vh;
+    width: 8vw;
+    background-color: #201B30;
+    color: #fff;
+    border: #3C247E 1px solid;
+    border-radius: 2.5vh;
+}
+
+#accId {
+    height: 5vh;
+    width: 15vw;
+    background-color: #201B30;
+    color: #fff;
+    border: #3C247E 1px solid;
+    border-radius: 2.5vh;
+    padding-left: 1.5vh;
+}
+
+#accId:focus-visible {
+    border: #fff 1px solid;
+    outline: none;
+}
+
+#loginform {
+    padding-top: 18px;
+    text-align: center;
+}
+
+#loginform p {
+    padding: 15px 25px;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.body {
+    display: flex;
+    box-sizing: border-box;
+    padding: 20px 70px 40px 40px;
+    flex-direction: column;
+    background: linear-gradient(179deg, #201B30 1.01%, #3C247E 99.01%) no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.main-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 14px;
+    background: rgba(28, 28, 28, 0.47);
+    box-shadow: 0px 4px 13.7px 3px rgba(0, 0, 0, 0.31);
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 1.2em 1.2em 0.5em 1.2em;
+}
+
+.nav-bar {
+    position: relative;
+    width: 100%;
+    height: 2rem;
+}
+
+.Title {
+    position: absolute;
+    color: #FFF;
+    line-height: normal;
+    font: 1.7vw "Jura", sans-serif;
+    width: fit-content;
+}
+
+.uName {
+    color: rgb(27, 206, 212);
+    line-height: normal;
+    font: 1vw "Jura", sans-serif;
+    position: absolute;
+    top: 0.6vw;
+    left: 10vw;
+}
+
+.exit-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 2.5vw;
+    height: 2.5vw;
+    fill: #fff;
+}
+
+.exit-button:hover {
+    fill: #ff6464;
+}
+
+.primary {
+    position: relative;
+    width: 99.6%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    gap: 0.6rem;
+    padding: 1rem 0 0.6rem 0;
+}
+
+.chat-box {
+    width: 90%;
+    border-radius: 13px;
+    background: rgba(0, 0, 0, 0.18);
+    padding: 1rem;
+    overflow: auto;
+    overflow-wrap: normal;
+    color: #fff;
+    gap: 5px;
+}
+
+.msgln {
+    margin: 2.5px 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    padding: 2.5px;
+    font-size: 90%;
+}
+
+.msgln span.left-info {
+    color: #fff;
+}
+
+.msgln span.chat-time {
+    color: #fff;
+    font-size: 60%;
+    vertical-align: center;
+}
+
+.msgln b.user-name-joined {
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #2c9951;
+    color: white;
+    padding: 2px 4px;
+    font-size: 90%;
+    border-radius: 4px;
+    margin: 5px 5px 5px 0;
+    text-align: center;
+}
+
+.msgln b.user-name {
+    font-weight: bold;
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 2px;
+    color: white;
+    font-size: 80%;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.msgln b.user-name-left {
+    font-weight: bold;
+    background-color: #992c2c;
+    color: white;
+    padding: 2px 4px;
+    font-size: 90%;
+    border-radius: 4px;
+    margin: 5px 5px 5px 0;
+    text-align: center;
+}
+
+.user-box {
+    border-radius: 13px;
+    background: rgba(0, 0, 0, 0.18);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    width: 10%;
+}
+
+h2 {
+    color: #FFF;
+    line-height: normal;
+    font: 1.3vw "Jura", sans-serif;
+    text-align: center;
+}
+
+.active-users {
+    color: #2c9951;
+    line-height: normal;
+    font: 0.8vw "Jura", sans-serif;
+    text-align: center;
+}
+
+.message-box {
+    position: relative;
+    width: 99.6%;
+    display: flex;
+    flex-direction: row;
+    gap: 0.6rem;
+}
+
+#messageBox {
+    border-radius: 13px;
+    background: rgba(0, 0, 0, 0.18);
+    padding: 1rem;
+    width: 85%;
+    border: none;
+    color: #fff;
+
+}
+
+#messageBox:focus {
+    color: #FFF;
+    border: #6747be 1px solid;
+    outline: none !important;
+}
+
+.message-options {
+    border-radius: 13px;
+    background: rgba(0, 0, 0, 0.18);
+    padding: 0.5rem 1rem;
+    width: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+}
+
+.message-options svg * {
+    fill: #c3b9df;
+    fill-opacity: 0.45;
+}
+
+.message-options svg *:hover {
+    fill: #c3b9df;
+    fill-opacity: 1;
+}
+
+.msgOptIcon {
+    background-color: #00000000;
+    border: none;
+}
+
+.Themes {
+    width: 100%;
+    display: none;
+    flex-direction: row;
+    gap: 2rem;
+    margin: 0.6rem 0 0 0;
+}
+
+.Themes>* {
+    background-color: #201B30;
+    width: 15%;
+    height: 2rem;
+    border: none;
+    border-radius: 10px;
+}
+
+.Themes button:nth-child(1) {
+    background-color: #992c2c;
+    color: white;
+}
+
+.Themes button:nth-child(2) {
+    background-color: #d46215;
+    color: white;
+}
+
+.Themes button:nth-child(3) {
+    background-color: #2c9951;
+    color: white;
+}
+
+.Themes button:nth-child(4) {
+    background-color: #2c4999;
+    color: white;
+}
+
+.Themes button:nth-child(6) {
+    background-color: #5b2c99;
+    color: white;
+}
+
+.Themes button:nth-child(5) {
+    background-color: #2d2d2e;
+    color: white;
+}
+
+.sendBtn {
+    border-radius: 13px;
+    background: rgba(0, 0, 0, 0.18);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    width: 5%;
+    border: none;
+}
+
+.sendIcon {
+    fill: #c3b9df;
+    fill-opacity: 0.45;
+}
+
+.sendIcon:hover {
+    fill: #c3b9df;
+    fill-opacity: 1;
+}
+
+.chat-box::-webkit-scrollbar {
+    width: 0.4vw;
+    border: none;
+}
+
+.chat-box::-webkit-scrollbar-track {
+    border: none;
+}
+
+.chat-box::-webkit-scrollbar-thumb {
+    background-color: rgb(78, 78, 78);
+    border-radius: 1vw;
+}
+
+.codeInsert {
+    background-color: rgb(34, 34, 34);
+    border-radius: 7px;
+    width: 20vw;
+    height: 20vw;
+    position: absolute;
+    right: 35vw;
+    top: 18vh;
+    z-index: 999;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 1vw;
+}
+
+.codeInsert h2 {
+    color: #FFF;
+    line-height: normal;
+    font: 1.5vw "Jura", sans-serif;
+    margin: 0 0 0.5vw 0;
+}
+
+.codeInput {
+    background-color: rgb(32, 32, 32);
+    border: none;
+    color: white;
+    width: 18vw;
+    height: 15vw;
+    resize: none;
+    font-size: x-small;
+    outline: none;
+}
+
+.codeSubmit {
+    position: absolute;
+    bottom: 1vw;
+    right: 2vw;
+    background-color: #00000000;
+    border: none;
+}
+
+.codeCancel {
+    position: absolute;
+    bottom: 1vw;
+    left: 2vw;
+    background-color: #00000000;
+    border: none;
+}
+
+code {
+    width: fit-content;
+    border-radius: 8px;
+}
+
+pre {
+    width: fit-content;
+}
+
+a {
+    color: #2c4999;
+    font-style: italic;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 100%;
+}
